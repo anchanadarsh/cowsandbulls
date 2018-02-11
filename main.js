@@ -28,7 +28,7 @@ cab.controller("cabController", ['$scope', function ($scope) {
             while (($scope.z == $scope.x) || ($scope.z == $scope.y));
         }
         var number = ($scope.x * 100) + ($scope.y * 10) + $scope.z;
-        //        alert(number);
+                alert(number);
         $scope.showyes = true;
     }
     $scope.userNumArray = [];
@@ -90,6 +90,7 @@ cab.controller("cabController", ['$scope', function ($scope) {
             $scope.resultbef = $scope.result1 + $scope.result2 + $scope.result3;
             if ($scope.resultbef == "1B1B1B") {
                 $scope.result = "3B";
+                $("#winModal").modal();
             } else if ($scope.resultbef == "1C1C1C") {
                 $scope.result = "3C";
             } else if (($scope.resultbef == "1C1C1B") || ($scope.resultbef == "1C1B1C") || ($scope.resultbef == "1B1C1C")) {

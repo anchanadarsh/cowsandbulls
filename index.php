@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <?php include 'assets/_partial/head.php' ?>
-    <!--        <link href="style.css" rel="stylesheet">-->
+        <!--        <link href="style.css" rel="stylesheet">-->
 </head>
 
 <body ng-app="cowsandbulls">
@@ -36,12 +36,33 @@
                 <td>{{usernum.res}}</td>
             </tr>
         </table>
+        
+        <div class="modal fade" id="winModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Congratulations!!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Correct Guess!</h3>
+                        <p>You have guessed the Number in {{userNumArray.length}} attemps</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="index.html">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Play Again</button>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </section>
     <div class="clearfix"></div>
 
     <?php include 'assets/_partial/footer-scripts.php' ?>
-    <script src="main.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
 
 </body>
 
