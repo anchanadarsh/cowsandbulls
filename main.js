@@ -28,7 +28,7 @@ cab.controller("cabController", ['$scope', function ($scope) {
             while (($scope.z == $scope.x) || ($scope.z == $scope.y));
         }
         var number = ($scope.x * 100) + ($scope.y * 10) + $scope.z;
-                alert(number);
+//                alert(number);
         $scope.showyes = true;
     }
     $scope.userNumArray = [];
