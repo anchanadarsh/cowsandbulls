@@ -49,6 +49,8 @@ input {
 .btn {
   border-radius: 2px;
   box-shadow: 1px 7px 27px -10px #333; }
+  .btn:focus {
+    outline: 0; }
 
 .btn-main {
   color: black;
