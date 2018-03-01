@@ -41,13 +41,14 @@ table {
     }
     td {
         border: 2px solid $color-primary!important;
-//        font-weight: bold;
+        //        font-weight: bold;
     }
     .gsnmb {
-//        letter-spacing: 20px;
+        //        letter-spacing: 20px;
     }
     .gsrslt {
-//        letter-spacing: 5px;
+        font-weight: bold;
+        color: $color-dark;
     }
 }
 
@@ -58,11 +59,12 @@ form {
 }
 
 input {
+    outline: 0;
     text-align: center;
     color: $color-white;
     font-weight: bold;
     letter-spacing: 20px;
-    width: 100px;
+    width: 120px;
     padding-left: 15px;
     border: 0;
     border-bottom: 2px solid $color-white;
