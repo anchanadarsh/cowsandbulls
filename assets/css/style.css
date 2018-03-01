@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf); }
+body {
+  font-family: Montserrat;
+  color: black;
+  font-size: 16px;
+  background: #009688;
+  background-size: cover; }
+
+.modal-footer {
+  text-align: center; }
+
+.modal.in .modal-dialog {
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto; }
+
+table tr {
+  background: #cfd8dc;
+  border: 2px solid #009688 !important; }
+table th {
+  text-align: center;
+  border: 2px solid #009688 !important;
+  color: #cfd8dc;
+  background: #263238; }
+table td {
+  border: 2px solid #009688 !important;
+  font-weight: bold; }
+table .gsnmb {
+  letter-spacing: 20px; }
+
+form label {
+  color: black; }
+
+input {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 20px;
+  width: 100px;
+  padding-left: 15px;
+  border: 0;
+  border-bottom: 2px solid white;
+  background: transparent;
+  margin-top: 20px; }
+
+.btn {
+  border-radius: 2px;
+  box-shadow: 1px 7px 27px -10px #333; }
+
+.btn-main {
+  color: black;
+  background-color: #c9fffa;
+  border-color: #c9fffa; }
+
+.btn-s {
+  color: black;
+  background-color: #1DE9B6;
+  border-color: #1DE9B6; }
+
+/*# sourceMappingURL=style.css.map */

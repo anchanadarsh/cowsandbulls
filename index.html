@@ -2,42 +2,31 @@
 <html lang="en-US">
 
 <head>
-    <title>Webpage Title</title>
+    <title>Cows And Bulls</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/freaking-custom.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <style>
-        .modal-footer {
-            text-align: center;
-        }
         
-        .modal.in .modal-dialog {
-            top: 50%;
-            transform: translateY(-50%);
-            margin: 0 auto;
-        }
-        
-        th {
-            text-align: center;
-        }
 
     </style>
 </head>
 
 <body ng-app="cowsandbulls">
     <div class="clearfix"></div>
-    <section ng-controller="cabController" id="section-home1" class="container-fluid text-center p-tb-md bg-f1f" style="height:100vh">
+    <section ng-controller="cabController" id="section-home1" class="container-fluid text-center p-tb-md" style="height:100vh">
 
-        <button class="btn btn-primary" ng-click="getNum()" ng-hide="showyes">Get 3 digit Number</button>
-        <button class="btn btn-success ng-hide" ng-show="showyes">Number Generated</button>
+        <button class="btn btn-main" ng-click="getNum()" ng-hide="showyes">Get 3 digit Number</button>
+        <button class="btn btn-s ng-hide" ng-show="showyes">Number Generated</button>
 
         <div class="ng-hide" ng-show="showyes">
             <form name="formguessnum" class="m-t-lg">
                 <label>Guess the generated number</label><br>
                 <input type="text" name="guessnumber" ng-model="guessNumber"><br>
-                <button type="submit" class="m-tb-sm btn btn-primary" ng-click="numtoarray()">Enter</button>
+                <button type="submit" class="m-tb-sm btn btn-main" ng-click="numtoarray()">Enter</button>
                 <p class="m-tb-sm" style="color:red" ng-if="repeatedyes">Enter Non-Repeated 3 digit Number only</p>
                 <p class="m-tb-sm" style="color:red" ng-if="dupnoyes">You have already guessed this number</p>
             </form>
@@ -50,8 +39,8 @@
                 </tr>
                 <tr ng-repeat="usernum in userNumArray">
                     <td>{{$index + 1}}</td>
-                    <td>{{usernum.guessnum}}</td>
-                    <td>{{usernum.res}}</td>
+                    <td class="gsnmb">{{usernum.guessnum}}</td>
+                    <td class="gsrslt">{{usernum.res}}</td>
                 </tr>
             </table>
 

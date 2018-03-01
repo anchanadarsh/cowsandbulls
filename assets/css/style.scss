@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+
+$font-primary:Montserrat;
+$color-primary: #009688;
+$color-dark:#263238;
+$color-light:#cfd8dc;
+$color-black:black;
+$color-white:white;
+
+body {
+    font-family: $font-primary;
+    color: $color-black;
+    font-size: 16px; //    font-weight: bold;
+    background: $color-primary;
+    background-size: cover;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal.in .modal-dialog {
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+table {
+    tr {
+        background: $color-light;
+        border: 2px solid $color-primary!important;
+    }
+    th {
+        text-align: center;
+        border: 2px solid $color-primary!important;
+        color: $color-light;
+        background: $color-dark;
+    }
+    td {
+        border: 2px solid $color-primary!important;
+        font-weight: bold;
+    }
+    .gsnmb {
+        letter-spacing: 20px;
+    }
+    .gsrslt {
+//        letter-spacing: 5px;
+    }
+}
+
+form {
+    label {
+        color: darken($color-primary, 40%);
+    }
+}
+
+input {
+    text-align: center;
+    color: $color-white;
+    font-weight: bold;
+    letter-spacing: 20px;
+    width: 100px;
+    padding-left: 15px;
+    border: 0;
+    border-bottom: 2px solid $color-white;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.btn {
+    border-radius: 2px;
+    box-shadow: 1px 7px 27px -10px #333;
+}
+
+.btn-main {
+    color: $color-black;
+    background-color: lighten($color-primary, 60%);
+    border-color: lighten($color-primary, 60%);
+}
+
+.btn-s {
+    color: $color-black;
+    background-color: #1DE9B6;
+    border-color: #1DE9B6;
+}
