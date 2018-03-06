@@ -25,9 +25,10 @@
         <div class="ng-hide" ng-show="showyes">
             <form name="formguessnum" class="m-t-lg">
                 <label>Guess the generated number</label><br>
-                <input type="text" name="guessnumber" ng-model="guessNumber" maxlength="3"><br>
+                <input type="text" name="guessnumber" ng-model="guessNumber" pattern="[0-9]*" maxlength="3"><br>
                 <button type="submit" class="m-tb-sm btn btn-main" ng-click="numtoarray()">Enter</button>
                 <p class="m-tb-sm" style="color:red" ng-if="repeatedyes">Enter Non-Repeated 3 digit Number only</p>
+                <p class="m-tb-sm" style="color:red" ng-if="zeroitis">Number should not start with ZERO</p>
                 <p class="m-tb-sm" style="color:red" ng-if="dupnoyes">You have already guessed this number</p>
             </form>
 
